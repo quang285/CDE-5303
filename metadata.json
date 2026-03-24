@@ -1,0 +1,5 @@
+{
+  "name": "SG LegalTriage AI",
+  "description": "AI-guided legal triage and consultation-readiness platform for Singapore jurisdiction. Analyzes cases, assesses urgency, and prepares consultation-ready packets for lawyers.",
+  "requestFramePermissions": []
+}

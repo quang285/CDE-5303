@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F8F9FA] text-[#1A1C1E] antialiased;
+  }
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-sm;
+}
+
+.legal-grid {
+  background-image: radial-gradient(#E5E7EB 1px, transparent 1px);
+  background-size: 24px 24px;
+}
