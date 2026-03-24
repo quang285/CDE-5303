@@ -1,20 +1,36 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Singapore Legal Triage App
 
-# Run and deploy your AI Studio app
+This application is a legal triage tool for Singapore jurisdiction, powered by Gemini AI.
 
-This contains everything you need to run your app locally.
+## Deployment to GitHub & Netlify
 
-View your app in AI Studio: https://ai.studio/apps/54b309d8-f81f-4425-a97a-b303b0c90ae5
+This project is configured for easy deployment to GitHub and Netlify.
 
-## Run Locally
+### 1. Push to GitHub
+1. Create a new repository on GitHub.
+2. Initialize your local directory as a git repository (if not already).
+3. Add the GitHub repository as a remote.
+4. Push your code to the `main` branch.
 
-**Prerequisites:**  Node.js
+### 2. Deploy to Netlify
+1. Log in to [Netlify](https://www.netlify.com/).
+2. Click **"Add new site"** > **"Import from an existing project"**.
+3. Select your GitHub repository.
+4. Netlify should automatically detect the settings from `netlify.toml`:
+   - **Build command:** `npm run build`
+   - **Publish directory:** `dist`
+   - **Functions directory:** `netlify/functions`
+5. Click **"Deploy site"**.
 
+### 3. Configure Environment Variables
+1. In the Netlify dashboard, go to **Site configuration** > **Environment variables**.
+2. Add a new variable:
+   - **Key:** `GEMINI_API_KEY`
+   - **Value:** Your Google Gemini API Key.
+3. Trigger a new deploy for the changes to take effect.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Local Development
+1. Install dependencies: `npm install`
+2. Create a `.env` file with your `GEMINI_API_KEY`.
+3. Start the dev server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000).
