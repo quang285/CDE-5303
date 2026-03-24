@@ -1,4 +1,4 @@
-# Singapore Legal Triage App
+# SG LegalTriage
 
 This application is a legal triage tool for Singapore jurisdiction, powered by Gemini AI.
 
